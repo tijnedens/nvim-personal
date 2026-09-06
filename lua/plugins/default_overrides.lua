@@ -21,4 +21,10 @@ return {
       table.insert(opts.ensure_installed, "gdscript")
     end,
   },
+  {
+    "saghen/blink.cmp",
+    opts = function(_, opts)
+      opts.signature = { enabled = true }
+    end,
+  },
 }
